@@ -95,7 +95,7 @@ $(function(){
 	});
 
 	/*按钮垂直居中*/
-	$(".buttn").css({"line-height":$(".carousel-inner img").height() + 'px'});
+	$(".buttn").css({"line-height":$(".carousel-inner .item img").eq(0).height() + 'px'});
 	$(window).resize(function(){
 
 		/*切换到每一帧时都要获取宽度*/
