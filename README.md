@@ -1,2 +1,2 @@
 # bootstrapWebsite
-基于boostrap的相应式网站
+基于boostrap的响应式网站
