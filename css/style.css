@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#navbar-collapse ul{
+	margin-top: 0;
+}
+
+#myCarousel{
+	margin: 50px 0 0 0;
+}
+.carousel-inner img{
+	margin:0 auto;
+}
+.carousel-inner>div{
+	background-color: #CCCCCC;
+}
+
+.carousel-control{
+	font-size: 100px;
+}
