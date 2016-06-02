@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>响应式网站</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- ixed-top导航栏置顶 -->
+	<!-- 相应式导航 -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<!-- 内容不超过1440px -->
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">品牌LOGO</a>
+				<!-- 绑定id="navbar-collapse事件 同时折叠 -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+
+					<!-- 增加三条线段 -->
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- 当宽度很小时隐藏ul -->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right" style="margin-top: 0;">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-home
+	"></span> 首页</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-align-left
+	"></span> 案例</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-tags
+	"></span> 资讯</a></li>
+					<li><a href="#"><span class="glyphicon
+	glyphicon-question-sign"></span> 关于</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
