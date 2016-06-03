@@ -6,10 +6,49 @@
 <title>响应式网站</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+	<!-- 登陆框模板写在body上避免给其他组件造成干扰 -->	
+	<div id="login" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog  modal-sm" role="document">
+			<div class="modal-content">
+				<!-- 登陆框首部 -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">LOGO之家</h4>
+				</div>
+				<!-- 登陆框主题内容 -->
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="email1">邮箱地址</label>
+							<input type="email" class="form-control" id="email1" placeholder="请输入您的邮箱地址"></input>
+						</div>
+						<div class="form-group">
+							<label for="password1">密码</label>
+							<input type="password" class="form-control" id="password1" placeholder="请输入您的密码"></input>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox">记住我</input>
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">登陆</button>
+					<button type="button" class="btn btn-primary">注册</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
 	<!-- ixed-top导航栏置顶 -->
 	<!-- 相应式导航 -->
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -34,6 +73,7 @@
 					<li><a href="#"><span class="glyphicon glyphicon-align-left"></span> 案例</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-tags"></span> 资讯</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+					<li data-target="#login"  data-toggle="modal"><a href="#"><span class="glyphicon glyphicon-user"></span> 登陆/注册</a></li>
 				</ul>
 			</div>	
 		</div>
@@ -89,17 +129,20 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 $(function(){
+
 	/*自动播放*/
 	$("#myCarousel").carousel({
 		interval:3000,
 	});
 
 	/*按钮垂直居中*/
-	$(".buttn").css({"line-height":$(".carousel-inner .item img").eq(0).height() + 'px'});
+	$(".buttn").css({"line-height":$(".carousel-inner .item img").height() + 'px'});
 	$(window).resize(function(){
 
 		/*切换到每一帧时都要获取宽度*/
-		var $height = $(".carousel-inner .item img").eq(0).height() || $(".carousel-inner .item img").eq(1).height() || $(".carousel-inner .item img").eq(2).height();
+		var $height = $(".carousel-inner .item img").eq(0).height() || 
+					$(".carousel-inner .item img").eq(1).height() || 
+					$(".carousel-inner .item img").eq(2).height();
 
 		$(".buttn").css({"line-height":$height + 'px'});
 
