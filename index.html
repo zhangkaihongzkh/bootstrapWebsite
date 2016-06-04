@@ -121,8 +121,36 @@
 
 		<!-- 按钮区域 -->
 		<!-- 绑定插件 -->
-		<a href="#myCarousel" data-slide="prev" class="carousel-control left buttn">&lsaquo;</a>
-		<a href="#myCarousel" data-slide="next" class="carousel-control right buttn">&rsaquo;</a>
+		<a href="#myCarousel" data-slide="prev" class="carousel-control left buttn">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#myCarousel" data-slide="next" class="carousel-control right buttn">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a> 
+	</div>
+
+	<!-- 增加运用栅格系统 -->
+	<div class="tab1">
+		<div class="container">
+			<h2 class="tab-h2">「 为什么选择Amaze UI 」</h2>
+			<p class="tab-p">Amaze ~ 妹子 UI</p>
+			<p class="tab-p">中国首个开源 HTML5 跨屏前端框架</p>
+			<div class="row">
+				<div class="col-md-6 col">
+					<div class="media">
+						<div class="media-top media-middle">
+							<a href="#">
+								<img class="media-object" src="img/foundation.png">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">为移动而生</h4>
+							<div class="tab-p">Amaze UI 以移动优先（Mobile first）为理念，从小屏逐步扩展到大屏，最终实现所有屏幕适配，适应移动互联潮流。</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -136,17 +164,17 @@ $(function(){
 	});
 
 	/*按钮垂直居中*/
-	$(".buttn").css({"line-height":$(".carousel-inner .item img").height() + 'px'});
-	$(window).resize(function(){
+//	$(".buttn").css({"line-height":$(".carousel-inner .item img").height() + 'px'});
+//	$(window).resize(function(){
 
 		/*切换到每一帧时都要获取宽度*/
-		var $height = $(".carousel-inner .item img").eq(0).height() || 
-					$(".carousel-inner .item img").eq(1).height() || 
-					$(".carousel-inner .item img").eq(2).height();
+//		var $height = $(".carousel-inner .item img").eq(0).height() || 
+//					$(".carousel-inner .item img").eq(1).height() || 
+//					$(".carousel-inner .item img").eq(2).height();
 
-		$(".buttn").css({"line-height":$height + 'px'});
+//		$(".buttn").css({"line-height":$height + 'px'});
 
-	});
+//	});
 
 });	
 </script>
