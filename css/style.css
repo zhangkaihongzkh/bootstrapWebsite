@@ -60,6 +60,24 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
 	font-size: 16px;
 }  
 
+/* footer区域 */
+#footer{
+	background-color: #999;
+	border-top: 1px solid #ccc;
+	text-align: center;
+	padding: 20px;	/* 响应式不设置高度设置padding */
+}
+#footer .ft-ul-link li{
+	display: inline-block;
+}
+
+#footer .ft-ul-link{
+	color: 
+}
+#footer .ft-ul-link a{
+	color: #fff;
+}
+
 
 /* 响应式媒体查询  bootstrap是移动设备优先*/
 /* 小屏幕（平板，大于等于 768px） */
