@@ -58,7 +58,24 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
 }
 .tab1 .row p{
 	font-size: 16px;
-}  
+} 
+.tab2{
+	background-color: #eee;
+} 
+.tab2 .tab2-card{
+	padding: 60px 10px;
+}
+.tab2 .tab2-card h3{
+	font-size: 20px;
+}
+.tab2 .tab2-card p{
+	font-size: 15px;
+}
+
+.tab2 h3,
+.tab2 p{
+	text-align: center;
+}
 
 /* footer区域 */
 #footer{
@@ -94,6 +111,12 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
 	.media-heading{
 		font-size: 18px;
 	}
+	.tab2 .tab2-card h3{
+		font-size: 22px;
+	}
+	.tab2 .tab2-card p{
+		font-size: 16px;
+	}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -110,6 +133,12 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
 	.media-heading{
 		font-size: 19px;
 	}
+	.tab2 .tab2-card h3{
+		font-size: 24px;
+	}
+	.tab2 .tab2-card p{
+		font-size: 17px;
+	}
 }
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 @media (min-width: 1200px){
@@ -124,5 +153,11 @@ UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
 	}
 	.media-heading{
 		font-size: 20px;
+	}
+	.tab2 .tab2-card h3{
+		font-size: 26px;
+	}
+	.tab2 .tab2-card p{
+		font-size: 18px;
 	}
 }
