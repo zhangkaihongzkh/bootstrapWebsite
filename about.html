@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>响应式网站</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no, maximum-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<!-- 登陆框模板写在body上避免给其他组件造成干扰 -->	
+	<div id="login" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog  modal-sm" role="document">
+			<div class="modal-content">
+				<!-- 登陆框首部 -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">LOGO之家</h4>
+				</div>
+				<!-- 登陆框主题内容 -->
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="email1">邮箱地址</label>
+							<input type="email" class="form-control" id="email1" placeholder="请输入您的邮箱地址"></input>
+						</div>
+						<div class="form-group">
+							<label for="password1">密码</label>
+							<input type="password" class="form-control" id="password1" placeholder="请输入您的密码"></input>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox">记住我</input>
+							</label>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">登陆</button>
+					<button type="button" class="btn btn-primary">注册</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ixed-top导航栏置顶 -->
+	<!-- 相应式导航 -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<!-- 内容不超过1440px -->
+		<div class="container">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">品牌LOGO</a>
+				<!-- 绑定id="navbar-collapse事件 同时折叠 -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+
+					<!-- 增加三条线段 -->
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- 当宽度很小时隐藏ul -->
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+					<li><a href="information.html"><span class="glyphicon glyphicon-align-left"></span> 资讯</a></li>
+					<li><a href="consult.html"><span class="glyphicon glyphicon-tags"></span> 案例</a></li>
+					<li class="active"><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+					<li data-target="#login"  data-toggle="modal"><a href="#"><span class="glyphicon glyphicon-user"></span> 登陆/注册</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h2>关于 Bootstrap 中文网</h2>
+			<p>Bootstrap中文网致力于前端开发推广，坚持分享、开放的互联网精神</p>
+		</div>
+	</div>
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 hidden-xs hidden-sm">
+					<div class="list-group">
+						<a class="list-group-item" href="#1">关于我们</a>
+						<a class="list-group-item" href="#3">展示你的Bootstrap作品</a>
+						<a class="list-group-item" href="#2">加入我们</a>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<a name="1"></a>
+					<h3>关于我们</h3>
+					<p>Bootstrap中文网 -- www.bootcss.com 创建于2012年。起因是国内没有较好的关于Bootstrap的中文教程和交流渠道，因此，我们对Bootstrap的文档进行了翻译整理，并且建立了QQ群和微博（@bootcss），方便更多热爱这个CSS框架的攻城师们分享、交流自己在前端设计、开发方面的心得。</p>
+					<a name="2"></a>
+					<h3>展示你的Bootstrap作品</h3>
+					<p>你是Bootstrap粉丝吗？你正在用Bootstrap做开发吗？你开发的网站是 Powered By Bootstrap 的吗？那就把你的网站show出来吧！</p>
+					<p>凡是经过确认采用Bootstrap CSS框架的网站，我们会将你所提交网站的截图及介绍展示到“Bootstrap优站精选”列表中，并有机会在 Bootstrap中文网 的首页进行推荐。</p>
+					<blockquote>
+						<p>请发邮件到下面的邮箱，并在邮件标题上注明（Bootstrap网站作品提交 -- 网站名称或网址）。</p>
+						<p>Mail： admin@bootcss.com</p>
+					</blockquote>
+					<a name="3"></a>
+					<h3>加入我们</h3>
+					<p>Bootstrap中文网致力于前端开发推广，坚持分享、开放的互联网精神，旨在为广大前端攻城师、设计师提供交流的平台，如果你和我们有相同的目标，我们乐意一起携手前行。</p>
+					<p>如果你也热爱前端开发、热爱 Bootstrap，有一颗创业的心，欢迎和我们联系，更欢迎你加入我们的团队！</p>
+					<p>QQ: 124369963 Mail: admin@bootcss.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 增加footer区域 -->
+	<footer id="footer">
+		<div class="container">
+			<div class="ft-ul-link">
+				<a href=""> 妹子招亲</a> | <a href="">品牌相关</a> | <a href="">定制</a> | <a href="">存档：v1.x</a>
+			</div>
+			<p>© 2015 AllMobilize, Inc. Licensed under MIT license. Developed with WebStorm.</p>
+		</div>
+	</footer>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

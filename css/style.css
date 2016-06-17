@@ -123,7 +123,7 @@ body {
 .info-content{
 	background-color: #fff;
 	margin: 0 0 10px 0;
-	box-shadow: 2px 2px 3px #ccc;
+	box-shadow: 2px 2px 3px #ccc;	/* 增加盒子阴影效果 */
 }
 
 .info-content img{
@@ -147,6 +147,41 @@ body {
 .info-right h4{
 	padding:3px 0 0 0;
 	font-size: 16px;
+}
+
+/* 案例区域 */
+#consult{
+	padding: 40px 0;
+	text-align: center;
+}
+#consult a{
+	font-size: 24px;
+	text-decoration: none;
+}
+#consult a small{
+	color: #777;
+	font-size: 65%;
+}
+.caption{
+	height: 200px;
+}
+
+/* 关于区域 */
+#about{
+	padding: 40px 15px;
+}
+#about a{
+	text-decoration: none;
+	color: #337ab7;
+}
+#about h3{
+	border-bottom: 1px solid #eee;
+	padding: 20px 0;
+	margin: 0px 0 20px 0;
+	font-size: 26px;
+}
+#about p{
+	margin-bottom: 1.8em;
 }
 
 
